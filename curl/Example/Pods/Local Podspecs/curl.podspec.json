@@ -1,0 +1,38 @@
+{
+  "name": "curl",
+  "version": "0.1.0",
+  "summary": "A short description of curl.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/billnie/ios_curl",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "billnie": "billnie@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/billnie/ios_curl.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "libcurl/**/*",
+  "public_header_files": "libcurl/*.{h,hpp}",
+  "ios": {
+    "vendored_libraries": "lib/ios/*.a"
+  },
+  "libraries": [
+    "ssl",
+    "crypto",
+    "curl",
+    "z"
+  ],
+  "subspecs": [
+    {
+      "name": "lib",
+      "source_files": "lib/ios/**/*.{a}"
+    }
+  ]
+}
