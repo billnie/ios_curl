@@ -60,7 +60,8 @@ int curl_get(const char *url, string &resp)
         curl_easy_setopt( curl, CURLOPT_CONNECTTIMEOUT, 12 );//连接超时，这个数值如果设置太短可能导致数据请求不到就断开了
         /* if we don't provide POSTFIELDSIZE, libcurl will strlen() by
          itself */
-        
+        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);//忽略证书检查
+        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0L);
         /* Perform the request, res will get the return code */
         res = curl_easy_perform(curl);
         /* Check for errors */

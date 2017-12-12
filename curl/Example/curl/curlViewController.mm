@@ -19,7 +19,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     string s;
-    curl_get("https://raw.githubusercontent.com/billnie/billnie.github.io/master/feed.xml",s);
+    curl_get("https://raw.githubusercontent.com/billnie/Exam/master/bt.txt",s);
 }
 
 - (void)didReceiveMemoryWarning
