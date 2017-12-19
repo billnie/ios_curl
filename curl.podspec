@@ -23,8 +23,9 @@ TODO: Add long description of the pod here.
 
   s.homepage         = 'https://github.com/billnie/ios_curl'
 
-  s.license          = { :type => 'MIT' }
-  s.author           = { 'billnie'  }
+s.license      = { :type => "MIT", }
+s.authors            = { "billnie" => "billnie@users.noreply.github.com" }
+
   s.source           = { :git => 'https://github.com/billnie/ios_curl.git', :tag => s.version.to_s }
 
 
